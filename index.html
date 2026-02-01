@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Garaje Digital</h1>
+        <p>Selecciona un modelo para visualizarlo</p>
+    </header>
+
+    <main class="container">
+        <div class="card" onclick="mostrarCarro('supra')">
+            <h3>Toyota Supra MK4</h3>
+            <p>El rey del tuning japonés.</p>
+            <button class="btn">Ver imagen</button>
+        </div>
+
+        <div class="card" onclick="mostrarCarro('tesla')">
+            <h3>Tesla Model S Plaid</h3>
+            <p>Potencia eléctrica pura.</p>
+            <button class="btn">Ver imagen</button>
+        </div>
+
+        <div class="card" onclick="mostrarCarro('gtr')">
+            <h3>Nissan GT-R R35</h3>
+            <p>Godzilla sobre ruedas.</p>
+            <button class="btn">Ver imagen</button>
+        </div>
+    </main>
+
+    <section id="preview-section">
+        <div id="display-area">
+            <p>Haz clic en un carro para verlo aquí</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
